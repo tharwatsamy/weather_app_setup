@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class NoWeatherBody extends StatelessWidget {
+  const NoWeatherBody({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Weather App'),
-      ),
-      body: Center(
+    return const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
+      child: Center(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
